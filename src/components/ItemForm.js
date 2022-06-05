@@ -2,6 +2,7 @@ import React from "react";
 import { v4 as uuid } from "uuid";
 
 function ItemForm(props) {
+  console.log(props)
   return (
     <form className="NewItem">
       <label>
@@ -18,9 +19,11 @@ function ItemForm(props) {
         </select>
       </label>
 
-      <button type="submit">Add to List</button>
+      <button type="submit" >Add to List</button>
     </form>
   );
 }
 
 export default ItemForm;
+
+// onSubmit={handleSubmit}
